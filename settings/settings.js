@@ -17,9 +17,7 @@ document.getElementById('saveButton').addEventListener('click', () => {
             sleepTimer: parseInt(sleepTimer, 10),
             shortcutsPerLine: parseInt(shortcutsPerLine, 10),
         }, () => {
-            saveMessage.style.display = 'block';
-            setTimeout(() => {
-                saveMessage.style.display = 'none';
-            }, 1250);
+            statusMessage.style.display = 'block';
+            setTimeout(() => statusMessage.style.display = 'none', 1500);
         });
 });
