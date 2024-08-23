@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Legacy Shortcuts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .settings-container {
+            background-color: #ffffff;
+            border-radius: 6px;
+            padding: 20px 30px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .info {
+            margin-top: 20px;
+            line-height: 1.75;
+        }
+
+        .subtitle {
+            line-height: 1.75;
+        }
+
+        .message {
+            color: green;
+            display: none;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="settings-container">
+    <h1>Chrome Legacy Shortcuts</h1>
+    <p class="subtitle">Brings back the multi-line shortcuts on your new tab page.</p>
+    <hr>
+    <p class="info">The extension uses a delay to properly identify and access the required shadow root elements on the new tab page. The default delay is set to 10 milliseconds.
+        If you notice that the shortcuts are not appearing correctly, you may need to increase this delay. Adjust the sleep timer below to find the optimal setting for your
+        system.</p>
+
+    <label for="sleepTimer">Sleep Timer (ms):</label>
+    <input type="number" id="sleepTimer" min="0" value="10">
+
+    <label for="shortcutsPerLine">Shortcuts per line:</label>
+    <input type="number" id="shortcutsPerLine" min="5" value="5">
+
+    <p id="saveMessage" class="message">Settings saved!</p>
+
+    <button id="saveButton">Save</button>
+</div>
+<script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Legacy Shortcuts",
+  "version": "1.0",
+  "description": "Brings back the multi-line shortcuts!",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "settings/index.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "chrome://new-tab-page/"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon/cls.png",
+    "48": "icon/cls.png",
+    "128": "icon/cls.png"
+  }
+}
