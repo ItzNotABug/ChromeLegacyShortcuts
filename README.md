@@ -5,8 +5,8 @@ Because the PMs at the giant f*cked up again and fixed something that wasn't bro
 ### Installation
 
 1. **Download and Unzip**: Download this project and unzip it to a directory of your choice.
-2. **Enable Chrome Experiments**: Go to [Chrome Experiments](chrome://flags/#extensions-on-chrome-urls) and enable `Extensions on chrome:// URLs`.
-3. **Access Chrome Extensions**: Navigate to [Chrome Extensions Settings](chrome://extensions). Make sure you have `Developer Mode` enabled.
+2. **Enable Chrome Experiments**: Go to `chrome://flags/#extensions-on-chrome-urls` and enable `Extensions on chrome:// URLs`.
+3. **Access Chrome Extensions**: Navigate to `chrome://extensions`. Make sure you have `Developer Mode` enabled.
 4. **Load the Extension**: Click on `Load Unpacked` and select the directory where you unzipped the project.
 5. **You're Done!**: Enjoy your restored multi-line shortcuts on the new tab page.
 6. **Optional but Recommended**: Enable `Allow in Incognito` in the extension's settings.
