@@ -45,6 +45,11 @@
             color: #333;
         }
 
+        label span {
+            line-height: 1.75;
+            font-weight: normal;
+        }
+
         input[type="number"] {
             width: 100%;
             padding: 8px;
@@ -81,11 +86,11 @@
             line-height: 1.75;
         }
 
-        .message {
+        .statusMessage {
             color: green;
             display: none;
             font-size: 14px;
-            margin-top: 10px;
+            margin-top: 4px;
         }
     </style>
 </head>
@@ -101,10 +106,14 @@
     <label for="sleepTimer">Sleep Timer (ms):</label>
     <input type="number" id="sleepTimer" min="0" value="10">
 
-    <label for="shortcutsPerLine">Shortcuts per line:</label>
-    <input type="number" id="shortcutsPerLine" min="5" value="5">
+    <label for="shortcutsPerLine">
+        Set Shortcuts per line:
+        <br/>
+        <span>Chrome allows a max of 10 shortcuts only!</span>
+    </label>
+    <input type="number" id="shortcutsPerLine" min="3" max="10" value="5">
 
-    <p id="saveMessage" class="message">Settings saved!</p>
+    <p id="statusMessage" class="statusMessage">Settings saved!</p>
 
     <button id="saveButton">Save</button>
 </div>
