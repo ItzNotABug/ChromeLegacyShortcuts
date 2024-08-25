@@ -13,7 +13,7 @@
         "chrome://new-tab-page/"
       ],
       "js": [
-        "content.js"
+        "csl.js"
       ]
     }
   ],
