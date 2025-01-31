@@ -28,6 +28,9 @@ function applyStyles(container, shortcutsPerLine) {
 
     container.style.setProperty('--row-count', `${rowCount}`);
     container.style.setProperty('--column-count', shortcutsPerLine);
+
+    /* remove height so the gap is uniform */
+    container.style.removeProperty('height');
 }
 
 /**
